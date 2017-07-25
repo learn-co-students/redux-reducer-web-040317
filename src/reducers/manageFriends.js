@@ -8,7 +8,9 @@ export function manageFriends(state = {
   switch(action.type){
 
     case "ADD_FRIEND":
-    return state
+    return Object.assign({}, state, {
+      friends: [...state.friends, action.friend] 
+    })
 
     default:
     return state
