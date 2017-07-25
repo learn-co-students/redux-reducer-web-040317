@@ -1,5 +1,5 @@
-export function managePresents(state, action){
-  managePresents(action, prevState){
+export function managePresents(state = {
+  presents: 0,
+}, action){
 
-  }
 }
